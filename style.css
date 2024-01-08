@@ -1,0 +1,251 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(foodpanda.png);
+  background-repeat: repeat;
+}
+
+/* NAVBAR */
+/* --------------------------------- */
+header{
+  background-color:rgb(239, 239, 239) ;
+  font-family: 'Montserrat', sans-serif;
+  /* width: 100%; */
+  min-width: 100%;
+  min-height: 68px;
+}
+nav{
+  padding-top: 9px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav img{
+  height: 50px;
+  width: 50px;
+  padding:10px;
+  padding-bottom:8px ;
+  vertical-align: middle;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+/* DIV1 */
+
+nav .div1{
+  transition: all 0.3s ease;
+}
+nav .div1:hover{
+  background-color: rgba(194, 190, 190, 0.479);
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.h1{
+  color: rgb(225, 40, 102);
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  font-weight: 550;
+}
+
+
+/* DIV2 */
+
+nav .div2 {
+  transition: all 0.3s ease;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.div2 i{
+  font-size: 23px;
+  color: rgb(225, 40, 102);
+  margin: 0;
+}
+
+.div2:hover{
+  background-color: rgba(194, 190, 190, 0.479);
+  border-radius: 5px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.div2:hover label {
+  font-weight: 501;
+}
+
+.div2 input{
+  height: 30px;
+  border-radius: 5px;
+}
+
+input:hover{
+  background-color:rgba(225, 40, 102, 0.768) ;
+}
+
+.div2 input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+/* DIV3 */
+
+.div3{
+  padding-top: 7px;
+  transition: all 0.3s ease;
+}
+
+
+.div3 .btn_1{
+  color: rgb(225, 40, 102);
+  height: 35px;
+  width: 80px;
+  border: 1px solid rgb(225, 40, 102);
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px;
+  margin-top: 0px;
+  transition: all 0.3s ease;
+}
+
+
+.btn_1:hover{
+  color: white;
+  background-color:rgb(225, 40, 102) ;
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+
+
+.div3 .btn_2{
+  background-color: rgb(225, 40, 102);
+  color: white;
+  height: 35px;
+  width: 80px;
+  border: 1px solid rgb(225, 40, 102);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_2:hover{
+  color: rgb(225, 40, 102);
+  background-color: white;
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+
+/* DIV4 */
+
+.div4{
+  display: inline-block;
+}
+
+.div4 i{
+  margin-left: 100px;
+  font-size: 27px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.div4 i:hover{
+    transform: scale(1.5);
+
+}
+
+
+/* NAVBAR CLOSED */
+/* ---------------------------------- */
+
+
+
+
+
+
+
+/* FOOD ITEMS */
+/* ---------------------------------- */
+
+main{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  row-gap: 16px;
+}
+
+section{
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin: 5px;
+}
+
+
+figure{
+  border-color: transparent;
+  border-radius: 20px 20px 20px 20px;
+}
+
+img{
+  width: 410px;
+  height: 225px;
+  border-radius: 20px 20px 0px 0px;
+  transition: all 0.4s ease;
+}
+
+
+section:hover img {
+  transform: scale(1.20);
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+section h1{
+  transition: 0.4s ease;
+}
+
+/* section h1:hover{
+  letter-spacing: 2px;
+  cursor: pointer;
+} */
+
+section:hover h1{
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+    cursor: pointer;
+}
+figcaption h1{
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.336);
+  margin-top: 0px;
+  height: 100px;
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 30px;
+}
+
+figcaption h1 p{
+  font-style: normal ;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+figcaption:hover p{
+  font-style: italic;
+}
+
+

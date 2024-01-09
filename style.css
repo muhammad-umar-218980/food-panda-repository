@@ -6,11 +6,23 @@
 }
 
 body{
-  background-image: url(foodpanda.png);
-  background-repeat: repeat;
-  background: linear-gradient(to top(rgb(225, 40, 102),rgb(61, 51, 51),white));
-
+  background-image: url(foodp.png);
+  background-repeat:round;
+  margin-top: 0px;
+    position: relative;
 }
+
+body::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    z-index: -1;
+}
+
 
 /* NAVBAR */
 /* --------------------------------- */
@@ -20,7 +32,10 @@ header{
   /* width: 100%; */
   min-width: 100%;
   min-height: 68px;
+  position: fixed;
+  z-index: 3;
 }
+
 nav{
   padding-top: 9px;
   display: flex;
@@ -28,12 +43,14 @@ nav{
   align-items: center;
 }
 
-header nav img{
-  height: 50px;
-  width: 50px;
-  padding:10px;
-  padding-bottom:8px ;
-  vertical-align: middle;
+
+.fp_img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+    border-radius:60%;
 }
 
 nav a{
@@ -177,17 +194,18 @@ input:hover{
 
 /* FOOD ITEMS */
 /* ---------------------------------- */
-
 main{
   font-family: 'Poppins', sans-serif;
-  margin-top: 60px;
+padding-top: 80px;
 }
+
 
 article{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; 
   row-gap: 16px;
+  column-gap: 2px;
 }
 
 section{
@@ -204,7 +222,7 @@ figure{
 }
 
 img{
-  width: 410px;
+  width: 445px;
   height: 225px;
   border-radius: 20px 20px 0px 0px;
   transition: all 0.4s ease;
@@ -217,13 +235,13 @@ section:hover img {
   cursor: pointer;
 }
 
-section h1{
+section figcaption h1{
   transition: 0.4s ease;
 }
 
 
 section:hover h1{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.75);
   letter-spacing: 2px;
     cursor: pointer;
 color: rgb(225, 40, 102);
@@ -232,13 +250,22 @@ text-align: center;
 
 figcaption h1{
   padding-left: 15px;
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(0, 0, 0, 0.68);
   margin-top: 0px;
-  height: 120px;
+  height: 155px;
   border-radius: 0px 0px 20px 20px;
-  padding-top: 30px;
+  padding-top: 23px;
+  color: aliceblue;
+  min-width: 445px;
 }
 
+section span{
+  transition: 0.3s ease;
+}
+
+section:hover span{
+  text-align: center;
+}
 figcaption h1 p{
   font-style: normal ;
   font-weight: lighter;
@@ -250,15 +277,34 @@ figcaption:hover p{
 }
 
 .fa-star{
-  /* font-size: 30px; */
-  /* color: rgb(241, 193, 3); */
   color: rgb(225, 40, 102);
   transition: all 1s ease-in-out;
 }
 
+
 section:hover i{
   font-size: 30px;
-  color: rgb(241, 193, 3);
+  color: rgb(255, 204, 0);
   transform: translateX(1000%);
   transform: rotateZ(360deg);
+}
+
+.order{
+  color: rgb(225, 40, 102);
+    height: 35px;
+    width: 80px;
+    border: 1px solid rgb(225, 40, 102);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section:hover .order{
+    color: white;
+    background-color: rgb(225, 40, 102);
+    border-radius: 12px;
+}
+
+.order:hover{
+    transform: scale(1.1);
 }

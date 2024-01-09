@@ -241,7 +241,7 @@ section figcaption h1{
 
 
 section:hover h1{
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.82);
   letter-spacing: 2px;
     cursor: pointer;
 color: rgb(225, 40, 102);
